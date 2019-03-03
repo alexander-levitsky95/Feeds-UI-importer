@@ -1,0 +1,21 @@
+feeds_ui_importer.upload_data:
+  path: '/feeds-ui-form-data-upload'
+  defaults:
+    _controller: '\Drupal\feeds_ui_importer\Controller\PopupController::formUploadData'
+    _title: 'Import'
+  requirements:
+    _permission: 'access content'
+feeds_ui_importer.upload_data_continue_import:
+  path: '/feeds-ui-form-data-upload-continue-import'
+  defaults:
+    _controller: '\Drupal\feeds_ui_importer\Controller\ContinueImportController::formMappingData'
+    _title: 'Continue Import'
+  requirements:
+    _permission: 'access content'
+feeds_ui_importer.settings_form:
+  path: '/admin/config/feeds-ui-importer-settings-form'
+  defaults:
+    _form: '\Drupal\feeds_ui_importer\Form\feedsUiImporterSettingsForm'
+    _title: 'Feeds UI importer settings form'
+  requirements:
+    _permission: 'administer site configuration'

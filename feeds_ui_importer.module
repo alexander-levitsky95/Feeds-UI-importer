@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains feeds_ui_importer.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function feeds_ui_importer_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the mint_my_account module.
+    case 'help.page.feeds_ui_importer':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Feeds ui importer module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function feeds_ui_importer_theme() {
+  return [
+    'feeds_ui_importer' => [
+      'variables' => [
+        'form' => 'form',
+        'text' => [],
+        'link' => [],
+      ],
+    ],
+  ];
+}

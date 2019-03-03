@@ -1,0 +1,6 @@
+feeds_ui_importer.settings:
+  title: 'feeds UI importer settings'
+  route_name: 'feeds_ui_importer.settings_form'
+  parent: 'system.admin_config_system'
+  description: 'Configure.'
+  weight: 40

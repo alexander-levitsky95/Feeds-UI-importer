@@ -1,0 +1,19 @@
+{#
+/**
+ * @file
+ * Default theme implementation for the .
+ *
+ * Available variables:
+ * text,
+ * form
+ *
+ * @ingroup themeable
+#}
+
+<div class="confirmation-popup--content-wrapper">
+  <div id="form-system-messages"></div>
+  {% if text %}
+    <div class="text--wrapper">{{ text|raw }}</div>
+  {% endif %}
+  {{ form }}
+</div>

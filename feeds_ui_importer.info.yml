@@ -1,0 +1,6 @@
+name: 'Feeds UI Importer'
+type: module
+description: 'This module provide custom functionality to Feeds UI.'
+core: 8.x
+package: 'Custom'
+version: '8.x-1.0-alpha2'
